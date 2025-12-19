@@ -1,1 +1,14 @@
-# CS-360-portfolio
+# CS-360 Portfolio Repository
+
+[Any existing content you already have in your README can stay above this line]
+
+## CS 360 Module Eight Journal Reflection
+
+The inventory tracking app I developed allows users to create accounts, log in securely, receive SMS notifications, and manage inventory items by adding, deleting, increasing, or decreasing quantities. The primary goal was to address the needs of small business owners or individuals who require a simple, reliable way to track stock levels in real time without the complexity of enterprise-level solutions. By incorporating user authentication and notifications, the app ensures that multiple users can maintain personalized inventories while staying informed about critical changes.
+
+To support these user needs and create a user-centered UI, the app includes key screens such as a login/registration screen, a main dashboard displaying the item list, an add/edit item screen, and a detailed item view. The UI designs prioritized clarity and ease of use by employing Material Design principles, intuitive navigation via a bottom navigation bar and RecyclerView for the item list, and minimalistic layouts that reduce cognitive load. Strategic placement of floating action buttons for adding items and clear feedback messages kept users oriented throughout their tasks. These designs proved successful because they enabled efficient workflows—testers could perform core actions in just a few taps—and highlighted the importance of planning screen flows early to avoid confusing transitions.
+
+My coding approach began with wireframes created in Excalidraw, followed by structured implementation in Android Studio using the MVVM architecture to separate concerns and improve maintainability. I employed techniques such as Room for local data persistence with SQLite, Firebase Authentication for secure user management, and incremental building with frequent emulator testing. Thorough testing involved unit tests for ViewModel logic, UI testing via Espresso, manual testing on physical devices, and edge-case scenarios (e.g., no internet for SMS fallback), which revealed and resolved issues like data loss on configuration changes and permission errors. A key challenge arose when integrating SMS notifications, requiring innovation with foreground services and careful permission handling to comply with Android restrictions. I was particularly successful in implementing the SQLite database integration with Room, demonstrating clean data modeling, efficient CRUD operations, and robust handling of multi-user scenarios. These strategies—especially upfront planning and modular architecture—will directly apply to future projects to produce more scalable and professional applications.
+
+### Submitted Artifact
+- `InventoryTrackingApp.zip` (or whatever your ZIP file is named) – Contains the complete Project Three Android Studio project with finalized code and UI designs.
